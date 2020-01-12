@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './index.css';
 
+import ToLink from './components/ToLink';
 import Home from './components/Home';
 import About from './components/About'; 
 import Work from './components/Work';
@@ -11,6 +12,7 @@ import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <BrowserRouter>
+        <ToLink />
         <Route exact path={'/'} component={Home} />
         <Route path={'/about'} component={About} />
         <Route path={'/work'} component={Work} />
