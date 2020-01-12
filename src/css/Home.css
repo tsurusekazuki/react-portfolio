@@ -10,5 +10,24 @@
     background-size: cover;
     width: 100%;                              /* 横幅のサイズを指定    */
     height: 100%;                    /* 縦幅のサイズを指定    */
-    opacity: 0.9;
+    opacity: 0.7;
+}
+.home_block {
+    position: absolute;
+    top: 160px;
+    left: 300px;
+}
+
+.home_work {
+    margin: 0;
+    font-size: 50px;;
+}
+.home_username {
+    margin: 0;
+    font-size: 70px;
+}
+
+p {
+    font-size: 30px;
+    color: black;
 }
