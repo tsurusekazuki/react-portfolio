@@ -1,0 +1,38 @@
+.nav {
+    background-color: #e0ffff	;
+}
+.navbar {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: 100px;;
+    text-align: center;
+}
+
+.navbar .navbar_title {
+    display: table-cell;
+    min-width: 50px;
+}
+
+.navbar .navbar_title .navbar_link {
+    display: block;
+    width: 100%;    
+    padding: 10px 0;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.navbar .navbar_title.current {
+    border: 3px solid #555;
+}
+
+.navbar .navbar_title .current .navbar_link {
+    color: #555;
+}
+
+.navbar .navbar_title .navbar_link:hover {
+    color: black;
+}
