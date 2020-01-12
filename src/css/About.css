@@ -1,4 +1,14 @@
+.wrapper {
+    background-color: #e0ffff;
+    height: 100%;
+}
+h1 {
+    margin: 0;
+}
 .about_box {
     margin: 0 auto;
     width: 550px;
+}
+.card_layout {
+    display: inline-block;
 }
