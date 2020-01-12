@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/About.css'
 
+import Skill from './Skill'
+
 class About extends React.Component {
     render() {
         return (
@@ -33,6 +35,7 @@ class About extends React.Component {
                     </div>
                 </div>
                 <h1>Skill</h1>
+                <Skill />
             </div>
         )
     }
