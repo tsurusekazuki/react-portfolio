@@ -1,7 +1,5 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Grid from '@material-ui/core/Grid';
@@ -12,7 +10,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import kotlin from '../assets/kt.jpeg';
 import javascript from '../assets/js.jpeg';
 import python from '../assets/python.png';
-import react from '../assets/react.png';
+import c from '../assets/c.png';
+import html_css from '../assets/htmlcss.jpg'
 
 const useStyles = makeStyles(theme => ({
     cardGrid: {
@@ -25,7 +24,7 @@ const useStyles = makeStyles(theme => ({
         flexDirection: 'column',
     },
     cardMedia: {
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '80.25%', // 16:9
     },
     cardContent: {
         flexGrow: 1,
@@ -34,10 +33,11 @@ const useStyles = makeStyles(theme => ({
 
 
 const cards = [
-    { url: react, language: 'React.js', desc: 'ポートフォリオ作成1'},
-    { url: react, language: 'React.js', desc: 'ポートフォリオ作成2'},
-    { url: react, language: 'React.js', desc: 'ポートフォリオ作成3'},
-    { url: react, language: 'React.js', desc: 'ポートフォリオ作成4'},
+    { url: kotlin, language: 'Kotlin', desc: '所属プロジェクトでのチーム開発、インターンでクライアントサイドの開発の際に使用' },
+    { url: python, language: 'Python', desc: '機械学習・DjangoでのAPI開発、競技プログラミングに参加するときに用いている' },
+    { url: javascript, language: 'javascript', desc: 'ReactやVueなどフレームワークを用いてポートフォリオ作成・開発などにも使用している' },
+    { url: c, language: 'C', desc: '学校の授業で2年間、使用していました。現在はまっったく書ける気がしません'},
+    { url: html_css, language: 'HTML/CSS', desc: '基本的な構文は習得済み、プロジェクトに所属してから最初に学習した言語' }
 ];
 
 export default function Skill() {
@@ -61,14 +61,6 @@ export default function Skill() {
                                         {card.desc}
                                     </Typography> 
                                 </CardContent>
-                                <CardActions>
-                                    <Button size="small" color="primary">
-                                        View
-                                    </Button>
-                                    <Button size="small" color="primary">
-                                        Edit
-                                    </Button>
-                                </CardActions>
                             </Card>
                         </Grid>
                     ))}
