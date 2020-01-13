@@ -7,7 +7,7 @@ class About extends React.Component {
     render() {
         return (
             <div className='wrapper'>
-                <h1>History</h1>
+                <h1 className='title'>History</h1>
                 <div className='about_box'>
                     <table>
                         <tr>
@@ -34,7 +34,7 @@ class About extends React.Component {
                         <li className='about_history_list_item'>2019/10 プロジェクトで2回目のチーム開発</li>
                     </div>
                 </div>
-                <h1>Skill</h1>
+                <h1 className='title'>Skill</h1>
                 <Skill />
             </div>
         )
