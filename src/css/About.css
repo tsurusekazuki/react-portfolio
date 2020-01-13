@@ -1,0 +1,16 @@
+.wrapper {
+    background-color: #e0ffff;
+    background-size: cover;
+    height: 100%;
+}
+.title {
+    text-align: center;
+    margin: 0;
+}
+.about_box {
+    margin: 0 auto;
+    width: 550px;
+}
+.card_layout {
+    display: inline-block;
+}
