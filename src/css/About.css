@@ -10,3 +10,6 @@ h1 {
     margin: 0 auto;
     width: 550px;
 }
+.card_layout {
+    display: inline-block;
+}

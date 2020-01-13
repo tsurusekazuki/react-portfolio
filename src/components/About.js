@@ -1,7 +1,21 @@
 import React from 'react';
 import '../css/About.css'
+import Grid from '@material-ui/core/Grid';
+import Cards from './Cards'
 
-import Skill from './Skill'
+import kotlin from '../assets/kt.jpeg';
+import javascript from '../assets/js.jpeg';
+import python from '../assets/python.png';
+import c from '../assets/c.png';
+import html_css from '../assets/htmlcss.jpg'
+
+const skills = [
+    { url: kotlin, language: 'Kotlin', desc: '所属プロジェクトでのチーム開発、インターンでクライアントサイドの開発の際に使用' },
+    { url: python, language: 'Python', desc: '機械学習・DjangoでのAPI開発、競技プログラミングに参加するときに用いている' },
+    { url: javascript, language: 'javascript', desc: 'ReactやVueなどフレームワークを用いてポートフォリオ作成・開発などにも使用している' },
+    { url: c, language: 'C', desc: '学校の授業で2年間、使用していました。現在はまっったく書ける気がしません'},
+    { url: html_css, language: 'HTML/CSS', desc: '基本的な構文は習得済み、プロジェクトに所属してから最初に学習した言語' }
+];
 
 class About extends React.Component {
     render() {
@@ -35,7 +49,11 @@ class About extends React.Component {
                     </div>
                 </div>
                 <h1>Skill</h1>
-                <Skill />
+                <div>
+                    {skills.map((skill) => (
+                        <Cards className='card_layout' url={skill.url} title={skill.language} desc={skill.desc} />
+                    ))}
+                </div>
             </div>
         )
     }
