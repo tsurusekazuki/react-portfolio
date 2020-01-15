@@ -1,0 +1,10 @@
+.work_wrapper {
+    background-color: #e0ffff;
+    background-size: cover;
+    height: 100vh;
+}
+
+.work_title {
+    margin: 0;
+    text-align: center;
+}
