@@ -22,17 +22,19 @@ class Contact extends React.Component {
         }
 
         return (
-            <div>
-                <h1>contact</h1>
-                <a href={contact[0]}>
-                    <TwitterIcon style={{ fontSize: 100 }} />
-                </a>
-                <a href={contact[1]}>
-                    <FacebookIcon style={{ fontSize: 100 }} />
-                </a>
-                <a href={contact[2]}>
-                    <GitHubIcon style={{ fontSize: 100 }} />
-                </a>
+            <div className='wrapper'>
+                <h1 className='contact_title'>contact</h1>
+                <div className='icon'>
+                    <a href={contact[0]}>
+                        <TwitterIcon style={{ fontSize: 100 }} />
+                    </a>
+                    <a href={contact[1]}>
+                        <FacebookIcon style={{ fontSize: 100 }} />
+                    </a>
+                    <a href={contact[2]}>
+                        <GitHubIcon style={{ fontSize: 100 }} />
+                    </a>    
+                </div>
             </div>
         )
     }

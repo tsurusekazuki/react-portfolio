@@ -1,0 +1,17 @@
+.wrapper {
+    background-color: #e0ffff;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.contact_title {
+    text-align: center;
+    margin: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 250px;
+    left: 650px;
+}
